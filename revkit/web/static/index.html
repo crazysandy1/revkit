@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>revkit</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+<header id="topbar">
+  <div class="brand">revkit</div>
+  <div id="file-name" class="muted"></div>
+  <span id="dirty" class="dirty" title="unsaved changes" hidden>●</span>
+  <div class="spacer"></div>
+  <button data-act="undo" title="Undo (Ctrl+Z)">Undo</button>
+  <button data-act="redo" title="Redo (Ctrl+Y)">Redo</button>
+  <button data-act="save" title="Save database (Ctrl+S)">Save</button>
+  <button data-act="goto" title="Jump to address/name (G)">Go to…</button>
+  <button data-act="search" title="Search (Ctrl+F)">Search…</button>
+  <button data-act="back" title="Back (Esc / Alt+←)">←</button>
+  <button data-act="forward" title="Forward (Alt+→)">→</button>
+  <button data-act="settings" title="Settings">⚙</button>
+</header>
+<main id="layout">
+  <aside id="left">
+    <nav class="tabs" id="left-tabs"></nav>
+    <div class="filterbar"><input id="left-filter" placeholder="filter…" autocomplete="off"></div>
+    <div id="left-body" class="scroll"></div>
+  </aside>
+  <div class="gutter" id="gutter-left"></div>
+  <section id="center">
+    <nav class="tabs" id="center-tabs"></nav>
+    <div id="center-body"></div>
+  </section>
+  <div class="gutter" id="gutter-right"></div>
+  <aside id="right">
+    <div class="panel-title">Context</div>
+    <div id="context" class="scroll small"></div>
+  </aside>
+</main>
+<footer id="statusbar">
+  <span id="status-addr" class="mono"></span>
+  <span id="status-msg"></span>
+  <div class="spacer"></div>
+  <span id="status-dbg" class="muted"></span>
+</footer>
+<div id="modal-root"></div>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

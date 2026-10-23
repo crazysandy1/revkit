@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.realworld/
+*.rkdb
+*.rkdb.tmp
+.venv/
+.claude/
+SQL-Tutorial.pdf
