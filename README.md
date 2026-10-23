@@ -1,5 +1,8 @@
 # revkit
 
+NOTE: PLEASE USE IT FOR EDUCATIONAL & LEARNING PURPOSE ONLY THE AUTHOR IS NOT RESPONSIBLE FOR ANY OF THE MISSUE in any case or scrunity Use it Responsibly 
+
+
 [![CI](https://github.com/crazysandy1/revkit/actions/workflows/ci.yml/badge.svg)](https://github.com/crazysandy1/revkit/actions)
 ![python](https://img.shields.io/badge/python-3.10%2B-blue) ![license](https://img.shields.io/badge/license-MIT-green)
 
